@@ -6,6 +6,8 @@ var today = new Date(Date.now());
 var day = 1000 * 3600 * 24
 var lines = Math.round((today.getTime() - birthday.getTime()) / day);
 
+console.log(today)
+
 collection.unshift('&nbsp;&nbsp;&nbsp;&nbsp;'+today.toISOString().slice(0, 10)+' '+phrase+'<br><br>')
 document.write('<br>')
 
