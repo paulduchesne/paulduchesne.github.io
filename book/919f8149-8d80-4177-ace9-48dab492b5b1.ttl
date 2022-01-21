@@ -1,0 +1,12 @@
+@prefix ns1: <https://paulduchesne.github.io/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://paulduchesne.github.io/book/919f8149-8d80-4177-ace9-48dab492b5b1> a ns1:Book ;
+    rdfs:label "Drive Your Plow Over the Bones of the Dead" ;
+    ns1:hasEvent [ a ns1:ReadingEvent ;
+            ns1:hasAgent <https://paulduchesne.github.io/person/8cb2f4c8-69c9-45b3-90dd-36a7feefe016> ;
+            ns1:hasDate "2022-01" ],
+        [ a ns1:BuyingEvent ;
+            ns1:hasAgent <https://paulduchesne.github.io/person/8cb2f4c8-69c9-45b3-90dd-36a7feefe016> ;
+            ns1:hasDate "2022-01" ] .
+

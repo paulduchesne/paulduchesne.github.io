@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://paulduchesne.github.io/ontology/BuyingEvent> a rdfs:Class ;
+    rdfs:subClassOf <https://paulduchesne.github.io/ontology/Event> .
+
