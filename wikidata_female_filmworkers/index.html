@@ -1,0 +1,664 @@
+<html>
+
+<head>
+  <title>Finding Female Filmworkers in Wikidata</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet" />
+  <style>
+    body {
+      background-color: #EEEEEE;
+    }
+
+    .canvas {
+      background-color: #EEEEEE;
+    }
+
+    .author {
+      stroke: #666666;
+      fill: #666666;
+      opacity: 0;
+    }
+
+    .title {
+      color: #666666;
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 50px;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+
+    .subtitle {
+      color: #FE654F;
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 24px;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+
+
+    .div-bracket {
+      background-color: #EEEEEE;
+      /* background-color: orange; */
+
+    }
+
+
+    .graph {
+      background-color: #EEEEEE;
+      /* background-color: orange; */
+
+    }
+
+    .div-mid-line {
+      background-color: #3311ff;
+      /* background-color: orange; */
+
+    }
+
+    .lines {
+
+      stroke: #FE654F;
+
+    }
+
+
+
+   
+    .author {
+      color: #777777;
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 24px;
+      opacity: 0;
+      text-transform: uppercase;
+    }
+
+ 
+
+    .body-title {
+      color: #FE654F;
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 24px;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+
+    .body-text {
+      color: #333333;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+      opacity: 0;
+      line-height: 32px;
+    }
+
+    .graph-title {
+      /* stroke: #FE654F; */
+      fill: #FE654F;
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 16px;
+      opacity: 1;
+      text-transform: uppercase;
+
+
+    }
+
+
+    .graph-caption {
+      /* stroke: #FE654F; */
+      fill: #333333;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+      opacity: 1;
+      /* text-transform: uppercase; */
+
+
+    }
+
+
+
+/* 
+
+    .attr("opacity", 1)
+    .style("stroke", 'red')
+    .style("fill", 'red')
+    // .style("pointer-events", "none")
+    .attr("font-family", "Montserrat") */
+
+
+  </style>
+</head>
+
+<body style='margin: 0;padding: 0'>
+
+
+  <div style="padding-top:100;padding-left:100;width:1000">
+    <tspan class="title">
+      Finding<br> Female<br> Filmworkers<br> in Wikidata<br>
+    </tspan>
+  </div>
+
+  <div style="padding-top:50;padding-left:100;width:1000">
+    <tspan class="subtitle">
+      How to query and visualise filmographic records
+    </tspan>
+  </div>
+
+
+
+<!-- add a div here where line goes down -->
+
+
+<div class='bracket' style="padding-left:100"></div>
+
+
+
+
+
+
+  <div style="padding-left:100;padding-bottom:20;width:1000">
+    <tspan class="body-title">
+      Finding Data about Female Contributors to Film Productions [1]</tspan>
+  </div>
+
+  <div style="padding-left:100;width:1000">
+    <tspan class="body-text">
+      A common assumption about the German "Kleberinnen" was, that they had a low income and they were regarded as low
+      ranking within the film producing industry. Going by oral testimonies, that might be rather a myth, probably based
+      on a contemporary perspective, which is influenced by the "auteur cinema" in which the director is the only
+      creative (thus: influential) person. In "Die kleinen Kleberinnen" the elderly women talk animately about their
+      career, their craft and about the pride they still feel a valued and well paid film workers. Even though they had
+      signed contracts (e.g. for the Decla, a German production studio which existed before the Ufa), they worked for
+      other studios as well, ands sometimes even from their own homes, thus increasing their salaries even further.
+      Because they were needed as experienced and skillful negative cutters, nobody really challenged that practice. In
+      the same interviews, the women stress that gluing film was by far not the only job they knew, if necessary, they
+      also printed and developed film for their needs.
+
+      <br><br>
+
+      Enriching our traditional filmographies and enhancing our knowledge about historical (and contemporary)
+      filmproduction has certainly been put on the agenda of film scholars and film historians worldwide. In the last
+      couple of years pivotal books were published about female employees in Hollywood (see Smyth) or women in British
+      film production (see Bell), research projects like STUDIOTEC: Film Studios: Infrastructure, Culture, Innovation in
+      Britain, France, Germany and Italy, 1930-60 and generally research which challenges the notion of a predominantly
+      make and national film history by taking emigrés and female filmworkers into account. These publications have used
+      archival and private sources as well as oral history thus developing a different methodology for their research
+      needs and questions unanswered by known records. They show that "the myths surrounding women's work as unskilled
+      or biologically determined have been compounded by established film historiographies" and need to be challenged by
+      unearthing more data (see Bell, 2021: 6). The "cherished notion in Western culture of the romantic artist as
+      individual genius" (see ibid.) is being discussed which may have huge implications on how we credit authorship in
+      our databases. Some go as far as challening the whole structure: "Perhaps asking who should get credit for one or
+      another part of this integrated creative activity is asking the wrong question. What we need to be asking is: what
+      is creative thought in a distributed cognitive system?" (Pearlman, 2018b). Studies like these stress that looking
+      at female careers needs a different methodology as well, because the norm of "continous work histories" with an
+      ongoing filmmaking record in one studio can't be applied here to assess success in the traditiponal sense (see
+      Bell, 2021: 7). As Bell stresses, many women's working lives "were shaped by child care and domestic
+      responsibilities", resulting in "episodic waves of working, where carreer and family alternatively" took center
+      stage (see ibid.). For her, the absence of women in film history need to be addressed with a fitting methodology,
+      where first of all, the concept of the episodic (interrupted) carreer has to serve as a lense "through which to
+      recover women's occupational labor". Secondly, women's achievements need to be contextualized within a climate of
+      discrimination, and lastly, a more flexible, inclusive model of creativity "to accomodate the many and varied
+      tasks women undertoook in the performance of their professional duties in below-the-line roles" (see Bell, 2021:
+      8). Of course we need to take national and studio traditions into account and a lot more work is to be done here
+      in order to be able to write a more comprehensive history of women in film production. sometimes the careers in
+      different countries and studios were exactly the opposite: while women only slowly got more significant roles in
+      the British film and television industry in the 1950s and 1960s, they started to disappear from important
+      positions from the Hollywood studios at the end of the 1950s due to the decline of the studio system (see Smyth
+      2018: 11).
+
+
+
+      <br><br>
+
+      One persistant myth is arguable, that women just were not present in early film production and therefore we don't
+      know their names. Thanks to scholars like Smyth we now know that for example Hollywood women actually had played
+      an major part, with many of them having influential positions and able to bring their vision and creativity on to
+      the screen. Other scholars look into Russian film history and particularly unearth early female film producers and
+      cinema owners (Drubek 2021, Kovalova and Bagrov 2021). Smyth argues, that it is not some sort of law of nature
+      that these names disappear from film history: "However much Hollywood acted as an advocate for working women
+      during the heyday of the studio system, male historians tended to edit out women's roles, leaving them on the
+      cutting room floor of conventional film histories" (see Smyth 2018: 13). She quotes authors like Ramsaye, Hampton,
+      Jacobs, Rosten and Knight, who "all focused on a progressive historical model founded on technological, artistic,
+      and commercial innovation dominated by a male cast of producers and directors" (see ibid.). Drubek argues in
+      similar ways about actively leaving out film workers who were not Russian, but had an emigrant background. More
+      and thorough research is needed to get a more comprehensive picture on how film historiography was written for
+      different countries and marginalized groups, but maybe there is a parallel with how history is generally written
+      by the dominant group and based on patriarchal and capitalistic notions of success and creativity - as Bell points
+      out. Challenges our view on national cinema as well as on only female figures being written out of history. It is
+      rather a erased film history of "Us-Them'ness" (Quote from "Behavior). Would be inclined to call on an explanation
+      which is based on human nature rather than on conscious power play, but that needs to be investigated further.
+
+      <br><br>
+
+      How to find data on female filmworkers? Were they actively forgotten? Were they ever recorded? Where should we
+      start looking? As Sarah-Mai Dang points out, that the awareness of missing sources has become a key issue of
+      feminist debate: "How can we identify and include blind spots when trying to reconstruct the past? In what way can
+      we narrate ellipsis and absences while avoiding the pitfall of implicitly promising to grasp the "whole" story
+      once enough information will be gathered? How is it possible to explore uncharted territory when faced with the
+      lack of historical objects?" (Dang, 2020). On the other hand, more sources than ever, have been digitised and put
+      online. There is an imminent risk that by focussing on online sources, we neglect the plentitude of diverse and
+      most likely unrecorded offline sources (Dang, 2020), like for example information which stems from viewing the
+      moving images itself which many times have not been preserved and made accessible. In short, only by joining
+      forces between archivists and researchers by creating more sources while analysing the information (for example
+      deciphering pseudonyms, which were used by women many times), can we gather more data for our explorations and
+      draw conclusions about the involvement of female filmworkers.
+
+
+      <br><br>
+
+      Women in film history are not easy to locate in film archives' databases and available filmographies for several
+      reasons. Not many databases distinguish their cast and credits information into at least a binary distinction of
+      male/female. And if there was the option, it arguably up until some years ago didn't feel as something mandatory
+      anyway. What would a film archive do with such information? The project BFI Filmography provided a novel view on
+      filmographic data by considering their metadata as something which can and should be mined and analysed as a
+      valuable corpus of data. Probably not many outside of film archives can understand how pioneering (and costly)
+      this project was. It was a political and strategic decision to dedicate resources (human and technical) to
+      enriching their data with gender information by combining the film archives' data (in that case prenames) with
+      "available gendered" prenames on the internet. Only then the BFI was able to show the gender distribution in
+      British film production. A process like this one can't be without errors, but it supports intellectual, manual
+      work by catalogers.
+
+      <br><br>
+
+      There is no space to elaborate more on this, but it is worth stressing, that "data is trimmed or transfigured to
+      match the expectations of the machine", which can be called the "schematic bias" (Thorp 2021: 131):
+
+      <br><br>
+
+      For those involved in building data systems, a schema is a kind of blueprint, a map of which types of information
+      will be stored, in what form, and which types of information will be rejected. In cognitive science, a schema is a
+      pattern of thought, a framework of preconceived ideas that directs how a person sees the world: if you observe
+      something that fits neatly into your schema, it gets files easily and efficiently into your memory. On the other
+      hand, schema-foreign things will often not be noticed or remembered, or they will be modified to fit into what you
+      expect based on the frameworks you constructed. (ibid: 132)
+
+      <br><br>
+
+
+      We need to keep these thoughts in mind when talking about how we organise information, what we leave out for
+      several reasons and where we can find to-date missing information.
+
+    </tspan>
+
+  </div>
+
+
+
+
+  <div class='bracket' style="padding-left:100"></div>
+
+
+
+
+
+
+  <div style="padding-left:100;padding-bottom:20;width:1000">
+    <tspan class="body-title">
+
+      Collecting and working with Data [2]</tspan>
+  </div>
+
+  <div style="padding-left:100;width:1000">
+    <tspan class="body-text">
+
+
+      Databases of film archives are - alas - not always the most available or accessible sources. Another caveat is,
+      that many times cataloguers either take their cast and credits information from secondary sources (which should
+      not be sneered at, because it also can complete fragmented physical elements) or have to fit the data visible on
+      the print/file itself into a quite rigid information system. Complementary action would involve viewing films,
+      especially those at the fringes of industrial film production, like documentary, "Kulturfilme", amateur films,
+      experimental films etc. Another option would be to perform formal analysis to find out more about stylistic
+      conventions, studio style, or even detecting gendered styles to enrich existing data. These highly speculative,
+      but nevertheless fascinating investigations might back up long standing film theories on the female involvement.
+      They might even shatter our understanding of how to even describe a "female" style? We can test our hypothesis on
+      what we would like to uncover/find if we pursue the quest for female names in film production: Do we think that
+      women had a unique voice? Is their contribution distinguishable from the contribution of their male co-workers? Or
+      do we rather just want to close knowledge gaps, no matter of male or female? As film archivists our preliminary
+      answer might be - again - a pragmatic one for the beginning. Collecting existing data would serve as a first step
+      to connect already digitised sources and by comparing and mapping them, complete some records at least.
+      <br><br>
+      The pionieering publications mentioned earlier relied on data sources which were mostly mined manually. It is
+      worth asking how the unearthed names and pieces of information are again stored for others to analyse and use for
+      their research questions. These infrastructures within academia rarely exist. The ["Women's Pioneer
+      Project"(https://wfpp.columbia.edu/)] offers a multitude of information, albeit in the form of essays. If we,
+      however, would need to query, compare and visualise the existing data, we need something more similar to a
+      database. Of course, as mentioned above and as it is summarized elsewhere (Dang 2020), databases are not neutral
+      collections of knowledge.
+      <br><br>
+      Dang points out, that there is an increasing risk "of letting offline sources be consigned to oblivion", because
+      of the easily and immediately available sources on the Internet. There are many data collections which are not
+      digitised yet and data, which especially for our topic can only be created by scholars to be later (or never)
+      provided online. Valuable data can be found in:
+      <ul>
+        <li>archives' databases and cataloguing notes not yet transferred</li>
+        <li>Filmographic sources and other aggregated online databases like Wikidata</li>
+        <li>historical film journals</li>
+        <li>memoirs und interviews</li>
+        <li>studio archival collections, guild reports, trade papers, local reportage, nationally syndicated journalism
+          (Symth)</li>
+        <li>Press publication</li>
+        <li>trade union records (Bell)</li>
+        <li>etc.</li>
+      </ul>
+      For this article we will focus on one online resource and evaluate what is available online today on Wikidata, and
+      potentially analyse where the gaps of data are. We will focus on female film workers and particulary ono data on
+      female editors. Before we do that, let's have a look on how gender is assigned in Wikidata and how reliable this
+      information is.
+
+
+    </tspan>
+  </div>
+
+
+
+
+  <div class='bracket' style="padding-left:100"></div>
+
+
+
+
+  <div style="padding-left:100;padding-bottom:20;width:1000">
+    <tspan class="body-title">
+Classification Male/Female and How Wikidata deals with this [3]</tspan>
+  </div>
+
+  <div style="padding-left:100;width:1000">
+    <tspan class="body-text">
+
+
+      One word on the classification into male/female, which is at best simplistic.
+      <br><br>
+      Many twentieth-century feminist scholars attempted to address the social construction of gender by treating gender
+      as something separate from sex. But that distinction is increasingly breaking down. Both gender and sex are social
+      constructs, as it turns out. Even sex, which today is sometimes still considered in biologically essential terms,
+      has a distinct cultural history. It can be traced to a place (Europe) and a time (the Enlightenment) when new
+      theories about democracy and what philosophers called "natural rights" began to emerge. Before then, there was a
+      hierarchy of the sexes, with men on the top and women on the bottom. (Thanks, Aristotle!) But there wasn’t exactly
+      a binary distinction between those two (or any other) sexes. In fact, according to historian of sex and gender
+      Thomas Laqueur, most people believed that women were just inferior men, with penises located inside instead of
+      outside of their bodies and that—for reals!—could descend at any time in life." (from:
+      https://data-feminism.mitpress.mit.edu/pub/h1w0nbqp/release/3)
+      <br><br>
+      There is no doubt that the subject is complex, however, if we want to take a first, pragmatic approach in order to
+      at least start the process of analysis, the binary classification can be helpful. Pragmatic because in many cases,
+      we won’t find more differentiated data. If the archives' databases or any other data sources have any gender
+      classification at all, the legacy data is in most cases binary. Even if one wants to enrich data afterwards, e.g.
+      by assigning first names to a gender via external sources, the result remains an approximation to a certain
+      degree. The best answer to overcoming the binary bias would be to have film workers classify themselves, like it
+      it is possible for example in Wikidata already.
+      <br><br>
+      Concepts, our view of the world, etc. is very often "datafied", turned into classifications, ontologies and often
+      only binary options (male/female). Even if there is a "other" option, statistics and further processing doesn't
+      work as well. "'What gets counted counts,' feminist geographer Joni Seager has asserted, and Munir is one person
+      who understands that. What is counted—like being a man or a woman—often becomes the basis for policymaking and
+      resource allocation." "The process of converting qualitative experience into data can be empowering, and even has
+      the potential to be healing, as we address toward the end of this chapter. When thoughtfully collected,
+      quantitative data can be empowering too." Both from: https://data-feminism.mitpress.mit.edu/pub/h1w0nbqp/release/3
+      <br><br>
+      How does Wikidata generate "gender", is it self-identified, how are claims made? Does Wikidata pull information
+      from other projects (Wikimedia) or "heuristic" (based on names)? https://www.wikidata.org/wiki/Q98665
+
+      <br><br>
+
+
+
+      <!-- our first graph, pull data from wikidata, plot it here . Is it too ambitious to pull all humans by gender-->
+      <!-- note, yes, querying all humans is not possible, so instead we have used all actors over 1 million -->
+
+
+
+    </tspan>
+  </div>
+
+
+
+  <div id='graph-3a' style="padding-left:100"></div>
+
+  <div id='graph-3b' style="padding-left:100"></div>
+
+  <div id='graph-3c' style="padding-left:100"></div>
+
+
+
+
+
+ 
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+
+    async function draw_title() {
+
+      d3.selectAll('.title')
+        .transition()
+        .duration(1000)
+        .style('opacity', 1);
+      
+      }
+
+    async function draw_subtitle() {
+
+      d3.selectAll('.subtitle')
+        .transition()
+        .delay(1000)
+        .duration(1000)
+        .style('opacity', 1);
+      
+      }
+
+    async function draw_lines() {
+      
+      d3.selectAll(".bracket")
+        .append("svg")
+        .attr("class", "div-bracket")
+        .attr("width", "750")
+        .attr("height", "405")
+        
+      d3.selectAll(".div-bracket")
+        .append("line")
+        .attr("class", "lines")
+        .attr('id', 'line01')
+        .attr("x1", 10)
+        .attr("x2", 10)
+        .attr("y1", 5)
+        .attr("y2", 5)
+        .style('stroke-width', '4px')
+        
+      d3.selectAll(".div-bracket")
+        .append("line")
+        .attr("class", "lines")
+        .attr('id', 'line02')
+        .attr("x1", 10)
+        .attr("x2", 10)
+        .attr("y1", 5)
+        .attr("y2", 5)
+        .style('stroke-width', '4px')
+        
+      d3.selectAll(".div-bracket")
+        .append("line")
+        .attr("class", "lines")
+        .attr('id', 'line03')
+        .attr("x1", 10)
+        .attr("x2", 10)
+        .attr("y1", 400)
+        .attr("y2", 400)
+        .style('stroke-width', '4px')
+        
+      d3.selectAll('#line01')
+        .transition()
+        .delay(2000)
+        .duration(1000)
+        .attr('x1', 0)
+        .attr('x2', 20)
+        
+      d3.selectAll('#line02')
+        .transition()
+        .delay(2000)
+        .duration(5000)
+        .attr('y2', 400)    
+        
+      d3.selectAll('#line03')
+        .transition()
+        .delay(7000)
+        .duration(1000)
+        .attr('x1', 0)
+        .attr('x2', 20)
+      
+      }
+
+    async function draw_body_title() {
+      
+      d3.selectAll('.body-title')
+        .transition()
+        .delay(8000)
+        .duration(1000)
+        .style('opacity', 1)
+      
+      }      
+
+    async function draw_body_text() {
+      
+      d3.selectAll('.body-text')
+        .transition()
+        .delay(9000)
+        .duration(1000)
+        .style('opacity', 1)
+
+      }      
+
+    async function load_csv(path) {
+      
+      return d3.csv(path);
+    
+    }
+
+    async function grapher(datum, div_name, title) {
+
+      d3.selectAll("#"+div_name)
+        .append("svg")
+        .attr("class", "graph")
+        .attr("id", div_name+"-svg")
+        .attr("width", "1200")
+        .attr("height", "200")
+
+      d3.selectAll("#"+div_name+"-svg")
+        .append("text")
+        .attr("class", "graph-title")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr('dominant-baseline', 'hanging')
+        .text(title)
+ 
+      max_candidates = [];
+      datum.forEach(x => { 
+        subtotal = [];
+        Object.entries(x).forEach(([k, v]) => {
+          if (k != 'group') {console.log(v)
+            subtotal.push(parseFloat(v))
+          }
+        });
+        summed_subtotal = subtotal.reduce((a, b) => a + b, 0);
+        max_candidates.push(summed_subtotal*1.1)
+      });
+
+      let x_instep = 50
+      let x_range = 1000
+
+      let y_instep = 50
+      let y_range = 100
+
+      let x_max = d3.max(max_candidates)
+      
+      let subgroups = datum.columns.slice(1)
+      let groups = datum.map(d => (d.group))
+
+      let stackedData = d3.stack()
+        .keys(subgroups)(datum)
+    
+      let y_scale = d3.scaleBand()
+        .domain(groups)
+        .range([y_instep, y_instep+y_range])
+        .padding([0.2])
+
+      let x_scale = d3.scaleLinear()
+        .domain([0, x_max]) 
+        .range([x_instep, x_instep+x_range])
+
+      d3.selectAll("#"+div_name+"-svg")
+        .append("g")
+        .attr("transform", `translate(`+x_instep+`, 0)`)
+        .call(d3.axisLeft(y_scale)
+        .tickValues([])
+        .tickSizeOuter(0));
+
+      d3.selectAll("#"+div_name+"-svg")
+        .append("g")
+        .attr("transform", `translate(0, `+(y_instep+y_range)+`)`)
+        .call(d3.axisBottom(x_scale)
+        .tickSizeOuter(0));
+        
+      let color = d3.scaleOrdinal()
+        .domain(subgroups)
+        .range(['#FE654F','#AAAAAA', '#AAAAAA'])
+
+      d3.selectAll("#"+div_name+"-svg")
+        .append("g")
+        .selectAll("g")
+        .data(stackedData)
+        .join("g")
+        .attr("fill", d => color(d.key))
+
+        .on("mouseover", (k, d, i) => {
+          console.log(d.key, d[0][1]-d[0][0])
+        })
+
+        .selectAll("rect")
+        .data(d => d)
+        .join("rect")
+        .attr("x", d => x_scale(d[0]))
+        .attr("y", d => y_scale(d.data.group))
+        .attr('height', y_scale.bandwidth())
+        .attr('width', d => x_scale(d[1]) - x_scale(d[0]))
+
+    }
+
+    async function render_page() {
+
+      await draw_title()
+      await draw_subtitle()
+      await draw_lines()
+      await draw_body_title()
+      await draw_body_text()
+
+      const data = await load_csv("./data/data_3a.csv")
+      grapher(data, "graph-3a", 'Wikidata filmworkers with gender data.')
+
+      const data2 = await load_csv("./data/data_3b.csv")
+      grapher(data2, "graph-3b", 'Gender data from identified source.')
+    
+      // graph two, combine yes without source and no without source.
+
+
+      const data3 = await load_csv("./data/data_3c.csv")
+      grapher(data3, "graph-3c", 'Common sources for gender data.')
+    
+      // note about last graph, not really happy with this,
+      // maybe keeping same visual anguage is not such a bad thing
+      // do further post processing, lets sort by wikipedia, inferred, viaf, bnf, GND
+
+      //
+
+
+
+    }
+
+    render_page();
+
+  </script>
+</body>
+
+</html>
