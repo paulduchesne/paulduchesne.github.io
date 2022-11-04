@@ -1,5 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-<https://paulduchesne.github.io/person/8cb2f4c8-69c9-45b3-90dd-36a7feefe016> a <https://paulduchesne.github.io/ontology/Person> ;
-    rdfs:label "Paul Duchesne" .
-

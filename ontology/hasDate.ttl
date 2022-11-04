@@ -1,8 +1,0 @@
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://paulduchesne.github.io/ontology/hasDate> a owl:DatatypeProperty ;
-    rdfs:domain <https://paulduchesne.github.io/ontology/Event> ;
-    rdfs:range xsd:date .
-

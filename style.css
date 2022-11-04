@@ -1,23 +1,23 @@
 body {
-    color: #EDEDED;
-    background-color: #2B2C28;
+    color: #2B2C28;
+    background-color: #EDEDED;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: normal;
     font-size: 15px
 }
 
 a:link {
-    color: #EDEDED;
+    color: #508CA4;
 }
 
 a:visited {
-    color: #EDEDED
+    color: #508CA4
 }
 
 a:hover {
-    color: #EDEDED
+    color: #508CA4
 }
 
 a:active {
-    color: #EDEDED
+    color: #508CA4
 }

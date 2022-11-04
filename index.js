@@ -1,14 +1,7 @@
 var collection = []
-var phrase = "Paul Duchesne is a Linked Open Data engineer and researcher, currently based in Canberra."
-
-var birthday = new Date("1986-04-14");
-var today = new Date(Date.now());
-var day = 1000 * 3600 * 24
-var lines = Math.round((today.getTime() - birthday.getTime()) / day);
-
-console.log(today)
-
-collection.unshift('&nbsp;&nbsp;&nbsp;&nbsp;'+today.toISOString().slice(0, 10)+' '+phrase+'<br><br>')
+var phrase = "Paul Duchesne is a film archivist and developer, currently based in Paris."
+var lines = 1000
+collection.unshift('&nbsp;&nbsp;&nbsp;&nbsp;'+phrase+'<br><br>')
 document.write('<br>')
 
 var loops;
@@ -30,11 +23,7 @@ for (loops = 0; loops < lines; loops++) {
   }
   var mutation = smaller_string.slice(0, reinsert_index) + moving + smaller_string.slice(reinsert_index, smaller_string.length)
 
-  var shifting = new Date(Date.now())
-  shifting.setDate(shifting.getDate() - (loops+1))
-  shifting = shifting.toISOString().slice(0, 10)
-
-  collection.unshift('&nbsp;&nbsp;&nbsp;&nbsp;'+shifting+' '+mutation+'<br><br>')
+  collection.unshift('&nbsp;&nbsp;&nbsp;&nbsp;'+mutation+'<br>')
   phrase = mutation
 }
 
