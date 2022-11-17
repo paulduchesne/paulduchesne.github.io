@@ -1,3 +1,1 @@
-# Personal Page
-
-[paulduchesne.github.io](paulduchesne.github.io)
+[paul duchesne](https://paulduchesne.github.io/)
