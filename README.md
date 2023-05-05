@@ -1,1 +1,3 @@
-[paul duchesne](https://paulduchesne.github.io/)
+# paulduchesne.github.io
+
+Personal site, pulling data statements from [Wikidata](https://www.wikidata.org/).
