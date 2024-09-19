@@ -1,2 +1,1 @@
-# paulduchesne.github.io
-Artist site.
+*artist site*

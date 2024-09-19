@@ -1,0 +1,27 @@
+body {
+    color: #2B2C28;
+    background-color: #EDEDED;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: normal;
+    font-size: 15px
+}
+
+a:link {
+    color: #508CA4;
+    text-decoration: None;
+}
+
+a:visited {
+    color: #508CA4;
+    text-decoration: None;
+}
+
+a:hover {
+    color: #508CA4;
+    text-decoration: None;
+}
+
+a:active {
+    color: #508CA4;
+    text-decoration: None;
+}
